@@ -1,0 +1,338 @@
+<div class="main-container">
+  <div class="section welcome-section">
+    <div class="custom-container">
+      <div>
+        <h1>
+          <span>Bienvenue sur ta page de </span>
+          <span>Fitness!</span>
+        </h1>
+      </div>
+      <div>
+        <p>Gérez vos détails personnels et vos options d'adhésion ici.</p>
+      </div>
+      <div class="buttons">
+        <a class="dark-button modifyUserDetails no-decoration">Modifier le
+          profil</a>
+        <a href="/#Pricing" class="red-button no-decoration">Changer
+          l'abonnement</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="profile-section">
+    <div class="custom-container">
+      <div class="picture">
+        <img class="image" id="profile-picture" />
+      </div>
+      <div class="info-container">
+        <h2 class="userName">John Doe</h2>
+        <div class="info-content">
+
+          <span class="custom-label">Nom: </span>
+           <span id="userLastName" class="value" data-field="lastName">Doe</span>
+          <span class="custom-label">Prénom: </span>
+           <span id="userFirstName" class="value" data-field="firstName">John</span>
+          <span class="custom-label">Courriel: </span>
+          <span type="email" id="userEmail" class="value">johnDoe@gmail.com</span>
+          <span class="custom-label">Mot de Passe: </span>
+          <span class="value">*******</span>
+          <span class="custom-label">Téléphone: </span>
+          <span id="userPhone" class="value">+1 (819) 658-5495</span>
+          <span class="custom-label">Adresse: </span>
+           <span id="userAddress" class="value">801 Aviation Pkwy <br /> Ottawa ON K1K 4R3</span>
+        </div>
+
+        <div class="buttons">
+          <label for="input-file" class="edit-profile light-button">Modifier la
+            photo</label>
+          <input
+            type="file"
+            id="input-file"
+            accept="image/jpeg, image/png, image/jpg"
+            style="display:none;"
+          />
+
+          <a
+            class="modifyUserDetails edit-profile dark-button no-decoration"
+          >Modifier les détails</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="section useful-links">
+    <div class="custom-container">
+      <div class="card">
+        <div
+          class="image"
+          style="background-image: url('images/group-fitness-header.jpg');"
+        ></div>
+
+        <div class="text-container">
+          <h1>
+            Vidéos d'entraînement
+            <div class="red-bar"></div>
+          </h1>
+          <p>
+            Téléchargez nos programmes d'entrainement incluant des exercices
+            cardio, fonctionnels et de musculation afin de vous guider dans
+            votre mise en forme. Allez à votre propre rythme avec des
+            entrainements faciles à suivre!
+          </p>
+          <div class="buttons">
+            <a class="dark-button no-decoration">Plus de détails</a>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="card slider">
+        <div class="svg">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            version="1.1"
+            x="0px"
+            y="0px"
+            viewBox="0 0 56.7 70.875"
+            enable-background="new 0 0 56.7 56.7"
+            xml:space="preserve"
+          >
+            <polygon
+              fill="none"
+              stroke="#000000"
+              stroke-width="1"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-miterlimit="10"
+              points="  53.9,33.5 33.5,53.9 2.8,23.2 2.8,2.8 23.2,2.8 "
+            />
+            <circle
+              fill="none"
+              stroke="#000000"
+              stroke-width="1"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-miterlimit="10"
+              cx="13"
+              cy="13"
+              r="3.6"
+            />
+            <circle
+              fill="none"
+              stroke="#000000"
+              stroke-width="1"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-miterlimit="10"
+              cx="36"
+              cy="29.6"
+              r="2.7"
+            />
+            <circle
+              fill="none"
+              stroke="#000000"
+              stroke-width="1"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-miterlimit="10"
+              cx="23.2"
+              cy="29.6"
+              r="2.7"
+            />
+            <path
+              fill="none"
+              stroke="#000000"
+              stroke-width="1"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-miterlimit="10"
+              d="  M29.6,39.9V19.4V39.9z"
+            />
+
+          </svg>
+        </div>
+        <div class="text-container">
+          <h1>
+            Rabais exclusifs
+            <div class="red-bar"></div>
+          </h1>
+          <p>
+            Découvrez nos offres exceptionnelles, minutieusement conçues pour
+            vous aider à réaliser vos objectifs fitness tout en réalisant des
+            économies. Chez Écofit Gym, notre engagement est de vous offrir des
+            solutions personnalisées pour vous motiver à dépasser vos limites et
+            à atteindre vos aspirations en matière de santé et de bien-être.
+          </p>
+          <div class="buttons">
+            <a class="dark-button no-decoration">Plus de détails</a>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="current-membership section">
+  <div class="current-membership-content custom-container">
+    <div class="center-text">
+      <div>Abonnement en vigueur</div>
+      <h1>Abonnement <span id="userAbonnement" class="value">aucun</span></h1>
+    </div>
+    <div>
+      <h2>Avantages</h2>
+      <ul id="membershipServices">  
+        
+      </ul>
+      <div class="buttons">
+        <a href="/#Pricing" class="dark-button no-decoration">Renouveler votre abonnement</a>
+        <a href="/#Pricing" class="red-button no-decoration">Changer votre abonnement</a>
+      </div>
+    </div>
+  </div>
+  <div id="upgradeMessage" class="center-text mtop-1 mbot-1">
+    Choisissez l'abonnement Platinum afin de profiter de tous les services offerts par notre gym.
+  </div>
+</div>
+
+
+  <div class="modify-profile-popup custom-container" id="modifyDetailsForm">
+    <h2>Modifier les informations personnels</h2>
+    <form action="#" class="form">
+
+      <div class="column">
+        <div class="input-box">
+          <label for="firstName">Prénom</label>
+          <input
+            id="firstName"
+            type="text"
+            placeholder="Entrez votre prénom"
+            value="John"
+          />
+          <div id="errorFirstName" class="error"></div>
+
+        </div>
+        <div class="input-box">
+          <label for="name">Nom</label>
+          <input
+            id="name"
+            type="text"
+            placeholder="Entrez votre nom"
+            value="Doe"
+          />
+          <div id="errorName" class="error"></div>
+
+        </div>
+
+      </div>
+
+      <div class="column">
+        <div class="input-box">
+          <label for="email">Courriel</label>
+          <input
+            id="email"
+            type="email"
+            placeholder="Entrez votre courriel"
+            value="johnDoe@gmail.com"
+          />
+          <div id="errorEmail" class="error"></div>
+
+        </div>
+        <div class="input-box">
+          <label for="phone">Téléphone</label>
+          <input
+            id="phone"
+            type="number"
+            placeholder="Entrer votre numéro de téléphone (8196585495)"
+            value="8196585495"
+          />
+          <div id="errorPhone" class="error"></div>
+
+        </div>
+
+      </div>
+
+      <div class="column">
+
+        <div class="input-box">
+          <label for="oldPassword">Mot de passe actuel</label>
+          <input id="oldPassword" type="password" placeholder="*******" />
+          <div id="errorOldPhone" class="error"></div>
+
+        </div>
+
+        <div class="input-box">
+          <label for="newPassword">Nouveau mot de passe</label>
+          <input
+            id="newPassword"
+            type="password"
+            placeholder="Nouveau mot de passe si nécessaire"
+          />
+          <div id="errorNewPassword" class="error"></div>
+
+        </div>
+      </div>
+
+      <div class="input-box address">
+        <label>Adresse</label>
+        <input
+          id="street"
+          type="text"
+          placeholder="Numéro civique et rue"
+          value="801 Aviation Pkwy"
+        />
+        <div id="errorStreet" class="error"></div>
+
+        <input id="appartment" type="text" placeholder="App" value="" />
+        <div class="column">
+          <div class="select-box">
+            <select id="province">
+              <option value="AB">AB</option>
+              <option value="CB">CB</option>
+              <option value="IPE">IPE</option>
+              <option value="MB">MB</option>
+              <option value="NWT">NWT</option>
+              <option value="NB">NB</option>
+              <option value="NE">NE</option>
+              <option value="NU">NU</option>
+              <option value="ON" selected>ON</option>
+              <option value="QC">QC</option>
+              <option value="SK">SK</option>
+              <option value="TN">TN</option>
+              <option value="YU">YU</option>
+            </select>
+          </div>
+          <div style="width: 100%;">
+
+            <input
+              id="city"
+              type="text"
+              placeholder="Entrer la ville"
+              value="Ottawa"
+            />
+            <div id="errorCity" class="error"></div>
+          </div>
+        </div>
+        <div class="column">
+          <div style="width: 100%;">
+            <input
+              type="text"
+              id="countryCode"
+              placeholder="Entrez votre code postal"
+              value="K1K 4R3"
+            />
+            <div id="errorPostalCode" class="error"></div>
+          </div>
+          <input type="text" id="country" readonly value="Canada" />
+        </div>
+      </div>
+      <button id="submitNewDetails" type="submit">Envoyer</button>
+    </form>
+  </div>
+
+  <div id="success-message">
+    <h2>Vos informations ont été enregistrées avec succès.</h2>
+  </div>
+</div>

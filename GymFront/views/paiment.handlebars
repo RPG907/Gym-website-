@@ -1,0 +1,120 @@
+<div class="container">
+
+  <div class="card-container">
+
+    <div class="front">
+      <div class="image">
+        <img src="chip.png" alt="" />
+        <img src="visa.png" alt="" />
+      </div>
+      <div class="card-number-box">################</div>
+      <div class="flexbox">
+        <div class="box">
+          <span>Nom du propriétaire</span>
+          <div class="card-holder-name">Nom complet</div>
+        </div>
+        <div class="box">
+          <span>Date d'expiration</span>
+          <div class="expiration">
+            <span class="exp-month">mm</span>
+            <span class="exp-year">yyyy</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="back">
+      <div class="stripe"></div>
+      <div class="box">
+        <span>cvv</span>
+        <div class="cvv-box"></div>
+        <img src="visa.png" alt="" />
+      </div>
+    </div>
+
+  </div>
+
+  <form action="">
+
+    <div class="inputBox">
+      <span>Nom compet du propriétaire</span>
+      <input type="text" class="card-holder-input" placeholder="John Doe" />
+    </div>
+    <div class="inputBox">
+      <span>Address</span>
+      <input
+        type="address"
+        class="card-holder-input"
+        placeholder="123 rue jean-de-la-lune"
+      />
+    </div>
+    <div class="inputBox">
+      <span>Code postal</span>
+      <input type="text" class="card-holder-input" placeholder="J9H 0K3" />
+    </div>
+    <div class="inputBox">
+      <span>Province</span>
+      <select name="" id="" class="province-input">
+        <option value="" selected disabled>Sélectionnez une province</option>
+        <option value="AB">Alberta</option>
+        <option value="BC">Colombie-Britannique</option>
+        <option value="MB">Manitoba</option>
+        <option value="NB">Nouveau-Brunswick</option>
+        <option value="NL">Terre-Neuve-et-Labrador</option>
+        <option value="NS">Nouvelle-Écosse</option>
+        <option value="NT">Territoires du Nord-Ouest</option>
+        <option value="NU">Nunavut</option>
+        <option value="ON">Ontario</option>
+        <option value="PE">Île-du-Prince-Édouard</option>
+        <option value="QC">Québec</option>
+        <option value="SK">Saskatchewan</option>
+        <option value="YT">Yukon</option>
+      </select>
+    </div>
+
+    <div class="inputBox">
+      <span>Numéro de carte</span>
+      <input
+        type="text"
+        maxlength="16"
+        class="card-number-input"
+        placeholder="################"
+      />
+    </div>
+    <div class="flexbox">
+      <div class="inputBox">
+        <span>Mois d'expiration</span>
+        <select name="" id="" class="month-input">
+          <option value="month" selected disabled>Mois</option>
+          <option value="01">01</option>
+          <option value="02">02</option>
+          <option value="03">03</option>
+          <option value="04">04</option>
+          <option value="05">05</option>
+          <option value="06">06</option>
+          <option value="07">07</option>
+          <option value="08">08</option>
+          <option value="09">09</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+        </select>
+      </div>
+      <div class="inputBox">
+        <span>Année d'expiration</span>
+        <input
+          type="text"
+          maxlength="4"
+          placeholder="Ex: 2028"
+          class="year-input"
+        />
+      </div>
+      <div class="inputBox">
+        <span>Code de sécurité</span>
+        <input type="text" maxlength="4" class="cvv-input" />
+      </div>
+    </div>
+    <input type="submit" value="Payer maintenant" class="submit-btn" />
+  </form>
+
+</div>

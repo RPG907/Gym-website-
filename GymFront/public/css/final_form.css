@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.modify-profile-popup {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  /*Responsive*/
+}
+.modify-profile-popup .container {
+  position: relative;
+  max-width: 700px;
+  width: 100%;
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+.modify-profile-popup .container header {
+  font-size: 24px;
+  color: #333;
+  font-weight: 500;
+  text-align: center;
+}
+.modify-profile-popup .container .form {
+  margin-top: 30px;
+}
+.modify-profile-popup .form .input-box {
+  width: 100%;
+  margin-top: 20px;
+}
+.modify-profile-popup .input-box label {
+  color: black;
+  font-weight: normal;
+}
+.modify-profile-popup .form :where(.input-box input, .select-box) {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  color: #707070;
+  margin-top: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0 15px;
+}
+.modify-profile-popup .input-box input:focus {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+.modify-profile-popup .form .column {
+  display: flex;
+  column-gap: 15px;
+}
+.modify-profile-popup .form .gender-box {
+  margin-top: 20px;
+}
+.modify-profile-popup .gender-box h3 {
+  color: #333;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+.modify-profile-popup .form :where(.gender-option, .gender) {
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+  flex-wrap: wrap;
+}
+.modify-profile-popup .form .gender {
+  column-gap: 5px;
+}
+.modify-profile-popup .gender input {
+  accent-color: #826afb;
+}
+.modify-profile-popup .form :where(.gender input, .gender label) {
+  cursor: pointer;
+}
+.modify-profile-popup .gender label {
+  color: #707070;
+}
+.modify-profile-popup .address :where(input, .select-box) {
+  margin-top: 15px;
+}
+.modify-profile-popup .select-box select {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  color: #707070;
+  font-size: 16px;
+}
+.modify-profile-popup .form button {
+  height: 55px;
+  width: 100%;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 30px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: var(--primary-color);
+}
+.modify-profile-popup .form button:hover {
+  background: #5838fa;
+}
+@media screen and (max-width: 500px) {
+  .modify-profile-popup .form .column {
+    flex-wrap: wrap;
+  }
+  .modify-profile-popup .form :where(.gender-option, .gender) {
+    row-gap: 15px;
+  }
+}

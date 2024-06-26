@@ -1,0 +1,32 @@
+{
+  "name": "gymfront",
+  "version": "1.0.0",
+  "description": "site pour un gym",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "client": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "author": "Elie mukuna kolela",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@splidejs/splide-extension-auto-scroll": "^0.5.3",
+    "bcryptjs": "^2.4.3",
+    "compression": "^1.7.4",
+    "concurrently": "^8.2.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.1",
+    "express": "^4.18.2",
+    "express-handlebars": "^7.1.2",
+    "helmet": "^7.1.0",
+    "slick-carousel": "^1.8.1",
+    "swiper": "^11.0.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  },
+  "tags": [
+    "swiper"
+  ]
+}
